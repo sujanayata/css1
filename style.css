@@ -1,0 +1,15 @@
+
+#division1{
+    background-color: aqua;
+    height: 100px;
+    width: 200px;
+    border:2px solid black
+
+}
+
+.class1{
+    background-color: yellow;
+    height:100px ;
+    width: 200px;
+    border:2px dashed black;
+}

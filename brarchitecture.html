@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar{
+            position: fixed;
+            top:0;
+            left:0;
+            width:100%;
+            background-color: white;
+            border-bottom: 2px solid;
+            padding: 3px opx 5px;   
+            z-index: 1000;
+        }
+        .navbar>h1,
+        a{
+            display: inline-block;
+            margin-top: 0;
+        }
+        .navbar>a{
+            margin-left: 10px;
+            color: rgb(15, 12, 12);
+            letter-spacing: 2px;
+            text-decoration: none;    
+        }
+        h2{
+            color: white;
+            position: absolute;
+            top: 400px;
+            bottom: 500px;
+            margin-left: 30%;
+            font-size: x-large;
+            font-style: oblique;
+        }
+        .part1{
+            position:relative;
+            width:100%;    
+        }
+        .child{
+            display: inline-block;
+        }
+
+        .part2 {
+            width:100%;
+            position:relative;
+        }
+        .part2>.child img{
+            width: 370px;
+            margin-left: 3%;
+        }
+         .part1>p{
+            top:40%;
+            left: 35px;
+            color: white;
+            font-size: 52px;
+            padding: 10px 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        b{
+            color:white;
+            background-color: rgb(12, 9, 9);
+            font-size: xx-large;
+
+        }
+        .part2.child p{
+            color:white;
+            position:absolute;
+            top:0%;
+            background-color: black;
+        }
+
+        
+        .p{
+            display: inline-block;
+        }
+        
+        .part3.child1{
+            display: inline-block;
+        }
+
+        .team{
+            width: 100%;
+        }
+        .pic{
+            display: inline-block;
+            width: 24%;
+
+        }
+        .pic img{
+            width: 100%;
+        }
+        .navbar>h1{
+            margin-right: 1050px;
+        }
+        .child p{
+           
+            position:absolute;
+            
+            
+             color: white;
+             background-color: black;
+             bottom: 86%;
+             margin-left: 10px;
+        }
+        footer{
+            color:white;
+            background-color: black;
+            margin-top: 20px;
+            text-align: center;
+            padding-bottom: 2%;
+            
+        }
+        form>input{
+            margin-top: 15px;
+            width: 1500px;
+            padding:20px 20px 8px
+        }
+        button{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+            <h1>BR Architecture</h1>
+            <a href="#projects">projects</a>
+            <a href="#About">About</a>
+            <a href="#Contact">Contact</a>
+        </div>
+    <div class="part1">
+        <img src="https://www.w3schools.com/w3images/architect.jpg" alt="" class="img1" >
+        <h2><b>BR</b>&nbsp; Architecture</h2>
+    </div>
+    <h4>Projects</h4>
+    <div class="part2" id="projects">
+      <div class="child">
+         <img src="https://www.w3schools.com/w3images/house5.jpg" alt="" class="img2">
+          <p>Summer House</p>
+          </div>
+      <div class="child">
+          <img src="https://www.w3schools.com/w3images/house2.jpg" alt="" class="img2">
+          <p>Barn House</p>  
+          </div>
+     <div class="child">
+         <img src="https://www.w3schools.com/w3images/house3.jpg" alt="" class="img2">
+         <p>Renovated</p>
+         </div>
+     <div class="child" >
+         <img src="https://www.w3schools.com/w3images/house4.jpg" alt="" class="img2">
+        <p>Barn House</p>
+    </div>
+    </div>
+    <div class="part2">
+        <div class="child">
+            <img src="https://www.w3schools.com/w3images/house2.jpg" alt="" class="img2">
+            <p>Summer House</p>
+        </div>
+        <div class="child">
+        <img src="https://www.w3schools.com/w3images/house5.jpg" alt="" class="img2">
+        <p>Brick House</p>
+        </div>
+        <div class="child">
+            <img src="https://www.w3schools.com/w3images/house4.jpg" alt="" class="img2">
+            <p>Renovated</p>
+        </div>
+        <div class="child">
+            <img src="https://www.w3schools.com/w3images/house3.jpg" alt="" class="img2">
+            <p>Brick House</p>
+        </div>
+        </div>
+
+     <div id="About"  class="about">
+        <h4>About</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat 
+        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+     </div> 
+     <div class="team">
+        <div class="pic">
+        <img src="https://www.w3schools.com/w3images/team2.jpg" >
+        <h3>John Doe</h3>
+        <p>CEO & Founder</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum.
+             Suspendisse sodales pellentesque elementum</p>
+        <button>Contact</button>     
+        </div>
+       <div class="pic">
+        <img src="https://www.w3schools.com/w3images/team1.jpg">
+        <h3>Jane Doe</h3>
+        <p>Architect</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum.
+             Suspendisse sodales pellentesque elementum</p>
+         <button>Contact</button>    
+        </div>
+        <div class="pic">
+        <img src="https://www.w3schools.com/w3images/team3.jpg">
+        <h3>Mike Ross</h3>
+        <p>Architect</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum.
+             Suspendisse sodales pellentesque elementum.Contact</p>
+        <button>Contact</button>
+        </div>
+        <div class="pic">
+        <img src="https://www.w3schools.com/w3images/team4.jpg" ;">
+        <h3>Dan Star</h3>
+        <p>Architect</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum.
+             Suspendisse sodales pellentesque elementum.</p>
+        <button>Contact</button>
+        </div>
+     </div>
+
+
+     <div id="Contact" class="contact">
+        <h4>Contact</h4>
+        <hr>
+        <p>Lets get in touch and talk about your next project</p>
+        <form>
+            <input type="text" placeholder="Name" required><br>
+            <input type="email" placeholder="email" required><br>
+            <input type="text" placeholder="subject" required><br>
+            <input type="text" placeholder="comment" required><br>
+            <button type="submit">Send Message</button>
+        </form>
+     </div>
+     <div>
+        <img src="https://www.w3schools.com/w3images/map.jpg">
+     </div>
+     <footer>
+        powered by <span>w3.css</span>
+     </footer>
+</body>
+</html>

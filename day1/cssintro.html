@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS INTRO</title>
+    <style>
+        body{
+            background-color: rgb(160, 184, 196);
+            justify-content: center;
+            align-items: center;
+        }
+        .css h1,h2{
+            color: red;
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="css">
+        <h1><b>INTRODUCTION TO CSS</b></h1>
+        <h2>CASCADING STYLE SHEETS</h2>
+        <P>Using css we can create RESPONSIVE WEB DESIGN (RWD)<br>
+           Responsive means reaction<br>
+           Webdesign means we display our content based on our desktop size<br>
+           CSS describes how html elements are to be displayed on the screen,or in other media<br>
+           External style sheets are stored in CSS files<br>
+           <h4>Styling Language – CSS (Cascading Style Sheets) is used to style and format 
+            HTML elements, such as colors, fonts, layouts, spacing, and responsiveness</h4>
+        </P>
+        <h3> why we need CSS ?</h3>
+        <ol>
+            <li>Without CSS → plain website.</li>
+            <li>With CSS → professional and user-friendly website.</li>
+            <li>Adds Style – Makes websites look attractive with colors, fonts, and layouts.</li>
+            <li>Consistency – One CSS file can style multiple pages.</li>
+            <li>Responsive Design – Helps websites adjust to mobiles, tablets, and desktops.</li>
+        </ol>
+        <h3>Three ways to insert CSS into HTML</h3>
+        <ol>
+            <li><h3>Inline CSS</h3></li>
+            <div class="inline_CSS">
+                <p>Inline CSS means writing CSS directly inside an HTML tag using the style attribute.
+                 It is used to apply a unique style to a single element only.</p>
+                 <ul>
+                    <li>Syntax:</li>
+                    <p>&lt;tagname style="property:value;"&gt;</p>
+                    <li>Example:</li>
+                    <p>&lt;p style="color":red font-size:18px;"&gt;</p>
+                    <li>you need to style one element</li>
+                    <li>for quick testing and debugging</li>
+                 </ul>
+            </div>
+        </ol>
+             <li><h3>External CSS</h3></li>
+             <div class="external_CSS">
+                <p>External CSS means writing all the CSS code in a separate .css file and linking it to the HTML file.<br>
+                 It is the most preferred method because it keeps structure (HTML) and style (CSS) separate.</p>
+                 <ul>
+                    <li>syntax</li>
+                    <p>&lt;link rel="stylesheet" href="style.css"&gt;></p>
+                     <h5>Example:</h5>
+                <p><strong>style.css</strong></p>
+                <pre>h1 {
+    color: green;
+    text-align: center;
+        }</pre>
+
+                <p><strong>index.html</strong></p>
+<pre>&lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;link rel="stylesheet" href="style.css"&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;Welcome to CSS!&lt;/h1&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;</pre>
+
+                <h5>Use When:</h5>
+                <li>You are working on large or multiple-page websites</li>
+                <li>You want to reuse styles across many pages</li>
+                <li>Best practice for clean code and separation of concerns</li>
+            </ul>
+        </div>
+
+                 </ul>
+             </div>
+             
+      
+</body>
+</html>

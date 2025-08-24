@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combinator selectors</title>
+    <style>
+        .parent>h1{
+            color:rgb(134, 16, 99);
+        
+
+        }
+        .parent>.child>h2{
+            background-color: gold;
+        }
+        .parent1 >h2{
+            color: darkblue;
+        }
+        h1+h2{
+            background-color:rgb(81, 8, 81)
+        }
+        h1~h3,h2{
+        background-color: rgb(83, 176, 168);
+}
+    </style>
+</head>
+<body>
+    <div class="body">
+    <div class="parent">
+        <h1>Rose</h1>
+        <h2>Lilly</h2>
+        <div class="child">
+            <h2>Sunflower</h2>
+        </div>
+        <h3>Lotus</h3>
+        <h3>Hibiscus</h3>
+    </div>
+    <div class="parent1">
+        <h2>Jasmine</h2>
+    </div>
+    </div>
+</body>
+</html>

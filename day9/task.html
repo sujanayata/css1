@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        .navbar{
+            position: fixed;
+            top:0;
+            left:0;
+            width:100%;
+            background-color: white;
+            border-bottom: 2px solid;
+            padding: 3px opx 5px;   
+            z-index: 1000;
+        }
+        .navbar>h1,
+        a{
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .navbar>a{
+            margin-left: 30px;
+            color: rgb(15, 12, 12);
+            letter-spacing: 4px;
+            text-decoration: none;    
+        }
+        .navbar h1{
+            margin-right: 900px;
+    
+        }  
+        h2{
+            color: black;
+            position: absolute;
+            top: 900px;
+            bottom: 900px;
+            margin-left: 70px;
+            margin-top: 20px;
+            font-size: x-large;
+            font-style: oblique;
+            letter-spacing: 5px;
+        }
+        .aboutsection{
+            max-width: 900px;
+            margin: 50px;
+            padding: 10px;
+        }
+        .aboutsection img{
+            margin-bottom: 40px;
+            margin-right: 100px;
+            margin-left:-300px;
+            
+        }
+        .aboutsection h3{
+            font-size: 28px;
+            margin-bottom: 5px;
+            text-align: center;
+        
+        }
+        .para h1,h3{
+            margin-left: 200px;
+
+        }
+       
+        .aboutsection{
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        .aboutsection {
+            display:flex ;
+            margin-left: 500px;
+        }
+        .menu h1{
+            margin-left: 400px;
+            font-size: 50px;
+            margin-bottom: 50px;
+
+        }
+        .menu h3,p{
+            margin-left: 200px;
+            padding: 10px; ;
+        }
+        .menusection{
+            display: flex;
+        }
+        .img2{
+            margin-left: 350px;
+        }
+        .cs h1{
+            margin-left: 200px;
+        }
+        footer{
+            color:white;
+            background-color: black;
+            margin-top: 50px;
+            text-align: center;
+            padding-bottom: 2%;
+            width: 100%;
+            height: 100px;
+        }
+
+        .form-container {
+                  width: 1050px;
+              }
+        .form-container input {
+         width: 100%;
+         height: 50px;
+         font-size: 16px;
+         padding: 10px;
+         border: none;
+         outline: none;
+      }
+       hr {
+       margin: 10px 0 20px 0;
+       border: 0;
+       border-top: 1px solid #ccc;
+    }
+    button {
+      width: 200px;
+      height: 50px;
+      background: rgb(161, 140, 182);
+      border: 1px solid #9d6e6e;
+      font-size: 16px;
+     
+    }   
+    .form-container{
+        margin-left: 200px;
+    }
+    
+    
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Gourmet au Catering</h1>
+        <a href="#About">About</a>
+        <a href="#Menu">Menu</a>
+        <a href="#Contact">Contact</a>
+    </div>
+    <div class="lecatering">
+        <img src="https://www.w3schools.com/w3images/hamburger.jpg" width="2000px">
+        <h2>Le Catering</h2>
+    </div>
+    <div class="aboutsection" id="About">
+        <img src="https://www.w3schools.com/w3images/tablesetting2.jpg"><br>
+        <div class="para">
+            <h1 style="font-size: 50px; font-style: oblique;">About&nbsp;&nbsp;&nbsp;Catering</h1>
+            <h3>Tradition&nbsp;since&nbsp;1889</h3>
+            <p>The Catering was founded in blabla by Mr.Smith
+            in lorem ipsum dolor sit amet, consectetur adipiscing <br>
+            elit consectetur adipiscing elit, sed do eiusmod temporincididunt ut labordolore magna aliqua.Ut enim ad 
+            minim veniam, quis nostrud exercitation ullamco laborisnisi ut aliquip ex ea commodo consequat.
+             Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu 
+            nulla pariatur.We only use seasonal ingredients.</p>
+            <p>Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est 
+            laborum consectetur adipiscing elit, sed do eiusmod 
+            temporincididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation 
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+    </div>
+    <hr>
+    <div class="menusection">
+    <div class="menu" id="Menu">
+    <h1>Our&nbsp;&nbsp;Menu</h1>
+   <h3>Bread Basket</h3>
+   <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+   <h3>Honey Almond Granola with Fruits</h3>
+   <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+   <h3>Belgian Waffle</h3>
+   <p>Vanilla flavored batter with malted flour 7.50</p>
+   <h3>Scrambled eggs</h3>
+   <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+   <h3>Blueberry Pancakes</h3>
+   <p>With syrup, butter and lots of berries 8.50</p>
+   </div>
+   <div class="img2">
+    <img src="https://www.w3schools.com/w3images/tablesetting.jpg">
+   </div>
+   </div>
+   <hr>
+   <div class="contact" id="Contact">
+    <div class="cs">
+        <h1>Contact</h1><br>
+        <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the <br>
+            food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+        <h1 style="color: cadetblue;">Catering Service, 42nd Living St, 43043 New York, NY</h1><br>
+        <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p><br>
+        </div>  
+   <div class="form-container">
+      <form action="">
+      <label>Name</label>
+      <input type="text" placeholder="Enter your name" required><hr>
+      <label>Date</label>
+      <input type="date" required><hr>
+      <label>How many people</label>
+      <input type="number" placeholder="Enter number of people" required><hr>
+      <label>Message</label>
+      <input type="text" placeholder="Special requirements" required><hr>
+      <button type="submit">SEND MESSAGE</button>
+      </form>
+    </div>
+</div>
+   <footer>
+     <span>Powred by Sujana Yata</span>
+   </footer>
+    </div>
+</body>
+</html>

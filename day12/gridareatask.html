@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid area task</title>
+    <style>
+        body{
+
+            background-color: rgb(12, 1, 1);
+            border: 3px solid red;
+            width: 1000px;
+            justify-content: center;
+            margin-top: 300px;
+            margin-left: 900px;
+
+        }
+         .parent{
+            display:grid;
+            grid-template-areas: 
+            'img1 img2 img3 img4'
+            'img1 img2 img3 img4'
+            'img1 img5 img6 img4'
+            'img1 img5 img6 img7'
+            'img8 img5 img9 img10'
+            'img11 img12 img13 img10'
+            'img11 img12 img13 img10'; 
+            grid-gap:0;
+    
+          }
+            .parent img{
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                display: block;
+
+            }  
+        
+        .img1{
+            grid-area: img1;
+            height: 500px;
+            width: 400px;   
+        }
+        .img2{
+            grid-area: img2;
+            height: 240px;
+        }
+        .img3{
+            grid-area: img3;
+
+        }
+        .img4{
+            grid-area: img4;
+            height: 400px; 
+        }
+        .img5{
+            grid-area:img5 ;
+            width: 400px;
+            height:500px;
+
+        }
+        .img6{
+           grid-area: img6;
+           width: 400px;
+           height: 400px;
+        }
+        .img7{
+            grid-area: img7;
+            width: 300px;
+        }
+        .img8{
+            grid-area:img8;
+            width: 310px;
+        }
+        .img9{
+            grid-area: img9;
+            width: 400px;
+        }
+        .img10{
+            grid-area: img10;
+            height:400px;
+            width: 300px;
+        }
+        .img11{
+            grid-area:img11 ;
+            height: 250px;
+            width:300px;
+        }
+        .img12{
+            grid-area:img12 ;
+            height: 400px;
+            
+        }
+        .img13{
+            grid-area:img13 ;
+            width: 400px;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+    <div class="parent">
+        <img src="https://thaka.bing.com/th/id/OIP.kJaJBrWtI92Su_h8R7gkqAHaF6?w=241&h=193&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" class="img1" >
+        <img src="https://thaka.bing.com/th/id/OIP.hhw26XDit4usORs6LtqPGgHaEo?w=316&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" class="img2" >
+        <img src="https://thaka.bing.com/th/id/OIP.Rnp6JYqsDPjCmsw8zD_elgHaEK?w=310&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" class="img3" >
+        <img src="https://m.media-amazon.com/images/I/71KuHEzh7hL.jpg" alt="" class="img4">
+        <img src="https://thaka.bing.com/th/id/OIP.Ydr6Nm3NkNCCQK2Ujh7dzAHaFH?w=252&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="" class="img5" >
+        <img src="https://thaka.bing.com/th/id/OIP.CY5REGBMoprNyuYQuASLUQHaEo?w=302&h=187&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" class="img6" >
+        <img src="https://thaka.bing.com/th/id/OIP.uNbHtofPfOwu0fwqX8EWvAHaH3?w=164&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" class="img7">
+        <img src="https://thaka.bing.com/th/id/OIP.e7xPxc57hzUsMmju0Jm2owHaEo?w=229&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" class="img8">
+        <img src="https://wallpaperaccess.com/full/327871.jpg" alt="" class="img9">
+        <img src="https://thaka.bing.com/th/id/OIP.ivHy7rpHL0GyEA_mdcY5AAHaFj?w=221&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" class="img10">
+        <img src="https://thaka.bing.com/th/id/OIP.8xmaCUYe7H6tk7zAzZtaywHaEc?w=294&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" class="img11">
+        <img src="https://thaka.bing.com/th/id/OIP.Kehv57PXrMotf-jIGibiaAHaHa?w=187&h=188&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" class="img12">
+        <img src="https://thaka.bing.com/th/id/OIP.o1MelKMxin5GW4-jNjx9qwHaEo?w=248&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" class="img13">
+        
+    </div>
+    </div>
+</body>
+</html>

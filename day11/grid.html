@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .parent{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            height: 100vh;
+            gap: 10px;
+        }
+        .child1,.child2,.child3,.child4,.child5{
+            background-color: rgb(38, 188, 211);
+        }
+        .child1{
+           grid-column-start: 1;
+           grid-column-end: 6;
+        }
+        .child2{
+         grid-row-start: 2;
+         grid-row-end: 6;
+        }
+        .child3{
+         grid-column:2/5 ;
+         grid-row: 2/5;
+        }
+        .child4{
+            grid-row: 2/5;
+        }
+        .child5{
+            grid-column: 2/6;
+        }
+     
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child1">suppu</div>
+        <div class="child2">shannu</div>
+        <div class="child3">anee</div>
+        <div class="child4">chitti</div>
+        <div class="child5">maggie</div>
+    </div>
+    
+</body>
+</html>

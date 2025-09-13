@@ -1,0 +1,178 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #fefefe;
+}
+
+header {
+  width: 100vw;
+  background: #f9f5ef;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  /*margin-left: 10px;*/
+
+}
+
+.navbar {
+  /*max-width: 1500px;*/
+  width:100vw;
+  margin: 0%;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  /* height: 150px; */
+  /* width: 10%; */
+  background-color: #c59d5f;  
+}
+
+.logo ion-icon {
+  font-size: 26px;
+  margin-right: 8px;
+  color: #333;
+  rotate:-90deg;
+   
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin-left: 150px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  margin-right: 30px;
+}
+
+.nav-links li a:hover {
+  color: #c59d5f; 
+}
+
+.social-icons a {
+  margin-left: 15px;
+  font-size: 20px;
+  width: 300px;
+  color:white;
+  transition: color 0.3s ease;
+  justify-content: left;
+  background-color:#090908;
+  border: 2px;
+}
+
+.social-icons a:hover {
+  color: #c59d5f;
+}
+span{
+  font-size: 30px;
+  background-color: #c59d5f;
+  
+}
+
+.dropdown{
+  display: none;
+  position: absolute;
+  top:50px;
+  left: 850px;
+  background: #ffff;
+  list-style: none;
+  padding:10px 0;
+}
+.dropdown li{
+  padding: 8px 20px;
+}
+.dropdown li a{
+  color:#333;
+}
+.nav-links li:hover .dropdown{
+  display:block;
+}
+.social-icons{
+    margin-left: 20px;
+    
+}
+.container{
+  width:200%; 
+  
+  
+}
+.container h1{
+  position:absolute;
+  top:30%;
+  left:10%;
+  text-align:center;
+  padding: 10px 20px;
+  font-size: 50px; 
+  color:#442c08;
+  font-style:oblique;
+
+}
+.container h2{
+  position:absolute;
+  top:40%;
+  left:10%;
+  text-align:center;
+  padding: 10px 20px;
+  font-size: 60px; 
+
+}
+.container h3{
+  position: absolute;
+  top:50%;
+  left:10%;
+  text-align: center;
+  padding:10px 20px;
+  font-size: 60px;
+
+}
+.container h4{
+  position: absolute;
+  top:60%;
+  left:10%;
+  text-align: center;
+  padding:10px 20px;
+  font-size: 30px;
+}
+.container h5{
+  position: absolute;
+  top:65%;
+  left:10%;
+  text-align: left;
+  padding:10px 20px;
+  font-size: 30px;
+
+}
+.main{
+  display:flex;
+}
+.container2{
+  width:100vw;
+  height:100vh
+
+}
+.container3{
+  display: flex;
+  width:100vw;
+  height:100vh;
+  margin-top:200px;
+}

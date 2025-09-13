@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Gradients Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color:black
+      
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 200px);
+      gap: 20px;
+    }
+
+    .box {
+      height: 200px;
+      border-radius: 1000px;
+      border:#ff6a00;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: bold;
+      font-style:oblique;
+      
+     /* box-shadow: 0 5px 15px rgba(0,0,0,0.2);*/
+    }
+
+    /* Linear Gradient */
+    .linear {
+      background: linear-gradient(135deg, #ff6a00,rgb(0, 13, 128));
+      
+    }
+
+    /* Radial Gradient */
+    .radial {
+      background: radial-gradient(circle, #43cea2, #185a9d);
+    }
+
+    /* Conic Gradient */
+    .conic {
+      background: conic-gradient(from 0deg, red, yellow, green, blue, red);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box linear" >supraja yata</div>
+    <div class="box radial">soumya yata</div>
+    <div class="box conic">sricharan yata</div>
+  </div>
+</body>
+</html>

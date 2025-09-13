@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: "poppins",sans-serif;
+        }
+        body{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            min-height:100vh ;
+            background-image:url(https://th.bing.com/th/id/R.d888227c4e37fc341d40b8ecc83cd193?rik=vk5%2fY%2bu0xBUscQ&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f04%2fDesktop-images-of-pink-wallpaper-backgrounds.jpg&ehk=2aCuK64bbOp0WZcZivHCdGHP8kPgDYTvqagQKZYfh8c%3d&risl=&pid=ImgRaw&r=0) 
+        }
+        .container{
+            width: 450px;
+            /*background-color: rgb(167, 30, 167);*/
+            background: conic-gradient(from 0deg, red, yellow, green, blue, red);
+            color: white;
+            border-radius:10px ;
+            padding: 30px 40px;
+        }
+        .container h1{
+            font-size: 36px;
+            text-align: center;
+        }
+        .container .inputbox{
+            width: 80%;
+            height: 50px;
+            /*background-color:rgb(160, 167, 30); */
+            background: conic-gradient(from 0deg, red, yellow, green, blue, red);
+            margin: 30px;
+
+        }
+        .inputbox input{
+            width: 100%;
+            height:100% ;
+            background: transparent;
+            border: none;
+            outline: none;
+            border: 2px solid black;
+            border-radius: 40px;
+            font-size: 16px;
+            color: white;
+            padding: 20px 45px 20px 20px;
+        }
+        .inputbox input::placeholder{
+            color: white;
+        }
+        .inputbox i {
+            position: absolute;
+            transform: translateY(5%);
+            font-size:20px ;
+        }
+       .container .rememberforgot{
+         display: flex;
+         justify-content: space-between;
+         font-size: 14px;
+         margin: -15px 0 15px;
+       }
+       .rememberforgot label input{
+        accent-color: white;
+        margin-right: 3px;
+       }
+       .rememberforgot a{
+        color: white;
+        text-decoration: none;
+       }
+       .rememberforgot a:hover{
+        text-decoration: underline;
+       }
+       .container .btn{
+        width: 100%;
+        height: 45px;
+        background-color: white;
+        border:none;
+        outline:none;
+        border-radius: 40px;
+
+       }
+       .container .registerlink{
+        font-size: 14px;
+        text-align: center;
+        margin:20px 0 15px;
+        margin-top: 10px;
+
+       }
+       .registerlink p a{
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+    
+
+       }
+       .registerlink p a:hover{
+        text-decoration: underline;
+       }
+        .inputbox i{
+            margin-left: -2%;
+            margin-top: 1%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="">
+            <h1>Login</h1>
+            <div class="inputbox">
+                <input type="text" placeholder="Username" required>
+                <i class='bx bxs-user'></i>
+
+
+            </div>
+            <div class="inputbox">
+                <input type="password" placeholder="password" required>
+                <i class='bx bxs-lock-alt'></i>
+                
+            </div>
+            <div class="rememberforgot">
+                <label>
+                    <input type="checkbox">Remember me
+                </label>
+                <a href="#">Forgot password</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+
+            <div clas="registerlink">
+                <p>Don't have an account?<a href="#">Register</a></p>
+            </div>
+
+
+
+
+        </form>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gradient Grid</title>
+  <style>
+    body {
+      background:black; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 100px);
+      grid-gap: 15px;
+      background:white;
+      padding: 15px;
+    }
+
+    .box {
+      width: 100px;
+      height: 120px;
+      border-radius: 6px;
+    }
+
+    .box1{
+     background: linear-gradient(145deg,red 10%,rgb(232, 48, 48),indigo);
+     }
+    .box2{
+     background: linear-gradient(to bottom,orange,red ,deeppink); 
+    }
+    .box3 {
+         background: linear-gradient( red,yellow);
+         }
+    .box4{
+     background: linear-gradient(to right,rgb(10, 118, 125),yellow ); 
+    }
+    .box5 {
+         background: linear-gradient(to right, #4dc7df 10%,green); 
+        }
+    .box6 { 
+        background: linear-gradient( 195deg, red,yellow ,green); 
+    }
+    .box7 {
+         background: linear-gradient(155deg, yellow 10%,red,indigo); 
+        }
+    .box8 { 
+        background: linear-gradient(380deg, rgb(48, 48, 196) 10%,purple,deeppink,red);
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+    <div class="box box5"></div>
+    <div class="box box6"></div>
+    <div class="box box7"></div>
+    <div class="box box8"></div>
+  </div>
+</body>
+</html>

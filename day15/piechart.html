@@ -1,0 +1,67 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piechart Conic Gradient</title>
+  <style>
+    body {
+      background:black;
+      text-align: center;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 200px;
+    }
+    .child1{
+      border:5px solid rgb(10, 19, 11);
+      width:200px;
+      height:200px;
+      border-radius: 50%;
+      background: conic-gradient(gold, rgb(173, 14, 14), rgb(37, 214, 17));
+    }
+    .child2{
+      border:5px solid black;
+      width:200px;
+      height:200px;
+      border-radius: 50%;
+      background: conic-gradient(
+        rgb(72, 0, 255) 0deg 45deg,
+        rgb(158, 8, 136) 45deg 90deg,
+        rgb(46, 205, 220) 90deg 135deg,
+        rgb(28, 190, 10) 135deg 180deg,
+        rgb(215, 149, 25) 180deg 225deg,
+        rgb(190, 30, 120) 225deg 270deg,
+        red 270deg 315deg,
+        yellow 315deg 360deg
+      );
+    }
+
+    .child3 {
+      border:5px solid black;
+      width:200px;
+      height:200px;
+      border-radius: 50%;
+      background: conic-gradient(rgb(0, 34, 255) 0deg 300deg,red 300deg 360deg);
+      
+    }
+    .child4 {
+      border:5px solid black;
+      width:200px;
+      height:200px;
+      border-radius: 50%;
+      background: conic-gradient( rgb(172, 20, 136) 0deg 60deg, #c71515 60deg 120deg, blue 120deg 360deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="child1"></div>
+    <div class="child2"></div>
+    <div class="child3"></div>
+    <div class="child4"></div>
+  </div>
+</body>
+</html>

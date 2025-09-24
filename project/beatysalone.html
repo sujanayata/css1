@@ -8,31 +8,51 @@
   <link rel="icon"
     href="https://static.vecteezy.com/system/resources/previews/024/284/257/original/beauty-salon-logo-design-free-vector.jpg">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
+
 <body>
   <header>
     <nav class="navbar">
+      
       <div class="logo">
-        <h2><ion-icon name="cut"></ion-icon>Salone</h2>
+        <ion-icon name="cut"></ion-icon>
+        Salone
       </div>
+
+    
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- NAV LINKS -->
       <ul class="nav-links">
         <li><a href="#HOME">HOME</a></li>
         <li><a href="#ABOUT">ABOUT</a></li>
         <li><a href="#SERVICE">SERVICE</a></li>
         <li><a href="#PRICE">PRICE</a></li>
+
+        <!-- PAGES DROPDOWN -->
         <li>
-          <a href="#pages">PAGES ▼</a>
+          <input type="checkbox" id="pages-toggle">
+          <label for="pages-toggle" class="dropdown-label">PAGES</label>
           <ul class="dropdown">
-            <li><a href="#PHOTO">Photo Gallary</a></li>
-            <li><a href="#beauty">Beauty Blog</a></li>
+            <li><a href="#PHOTO">Photo Gallery</a></li>
+            <li><a href="#BEAUTY">Beauty Blog</a></li>
             <li><a href="#TEAM">Our Team</a></li>
-            <li><a href="#TEST">Testimonal</a></li>
+            <li><a href="#TEST">Testimonial</a></li>
           </ul>
         </li>
+
         <li><a href="#CONTACT">CONTACT</a></li>
       </ul>
+
+      <!-- SOCIAL ICONS -->
       <div class="social-icons">
         <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
         <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
@@ -42,6 +62,12 @@
       </div>
     </nav>
   </header>
+
+
+
+
+  <!-- main -->
+
   <main>
     <div class="main" id="HOME">
       <div class="container">
@@ -59,6 +85,10 @@
       </div>
     </div>
   </main>
+
+
+  <!-- container3 -->
+
   <section>
     <div class="container3" id="ABOUT">
       <div class="img1">
@@ -82,6 +112,9 @@
       </div>
     </div>
   </section>
+
+
+
 
   <section class="services" id="SERVICE">
     <h3>Our Services</h3>
@@ -137,6 +170,7 @@
     </div>
   </section>
 
+
   <div class="wrap" id="PRICE">
     <main class="left">
       <div>
@@ -168,8 +202,7 @@
         </div>
       </div>
       <div class="service">
-        <div class="img"><img
-            src="./img11.jpg">
+        <div class="img"><img src="./img11.jpg">
         </div>
         <div class="service-info">
           <div class="service-name">MAKEUP</div>
@@ -179,8 +212,7 @@
         </div>
       </div>
       <div class="service">
-        <div class="img"><img
-            src="./img12.webp">
+        <div class="img"><img src="./img12.webp">
         </div>
         <div class="service-info">
           <div class="service-name">MANICURE</div>
@@ -190,8 +222,7 @@
         </div>
       </div>
       <div class="service">
-        <div class="img"><img
-            src="./img13.webp">
+        <div class="img"><img src="./img13.webp">
         </div>
         <div class="service-info">
           <div class="service-name">PEDICURE</div>
@@ -201,8 +232,7 @@
         </div>
       </div>
       <div class="service">
-        <div class="img"><img
-            src="./img14.jpeg">
+        <div class="img"><img src="./img14.jpeg">
         </div>
         <div class="service-info">
           <div class="service-name">MASSAGE</div>
@@ -212,8 +242,7 @@
         </div>
       </div>
       <div class="service">
-        <div class="img"><img
-            src="./img15.webp">
+        <div class="img"><img src="./img15.webp">
         </div>
         <div class="service-info">
           <div class="service-name">SKIN CARE</div>
@@ -224,6 +253,11 @@
       </div>
     </aside>
   </div>
+
+
+
+
+
   <div class="arrow-box">↑</div>
   <div class="gallary" id="pages">
     <h1>Gallery</h1>
@@ -236,16 +270,20 @@
     <div class="row2">
       <img src="./img19.jpeg" width="40%">
       <img src="./img20.webp" width="40%">
-      <img src="./img21.jpg"width="30%">
+      <img src="./img21.jpg" width="30%">
     </div>
   </div>
+
+
+
+
   <div class="team">
     <h1>Team Members</h1>
     <h2>Our Experienced Specialists</h2>
   </div>
   <div class="team-container" id="#TEAM">
     <div class="team-member1">
-      <img src="anee.jpg" width="37%">
+      <img src="./anee.jpg" width="37%">
       <div class="text1">
         <h3>aneela bandi</h3>
         <p>Hair stylist</p>
@@ -286,150 +324,217 @@
     </div>
   </div>
 
+
+
+
+
   <div class="testimonals">
-    <h1>Testimonal</h1>
+    <h1>Testimonial</h1>
     <h2>What Clients Say!</h2>
   </div>
+
   <div class="testimonal">
-    <div class="card1">
-      <div class="t1">
-        Tempor erat elitr rebum at clita.Diam dolor diam ipsum sit diam
-        diam amet diam et eos.clita erat ipsum et lorem et sit.
-      </div>
-      <div class="client">
-        <img src="./img25.jpg">
-        <div class="client-info">
-          <div class="name">Client Name</div>
-          <div class="role">profession</div>
+    <div class="scroll-wrapper">
+      <!-- Original cards -->
+      <div class="card1">
+        <div class="t1">
+          Tempor erat elitr rebum at clita.Diam dolor diam ipsum sit diam
+          diam amet diam et eos.clita erat ipsum et lorem et sit.
+        </div>
+        <div class="client">
+          <img src="./img25.jpg">
+          <div class="client-info">
+            <div class="name">Client Name</div>
+            <div class="role">Profession</div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="card2">
-      <div class="t2">
-        Tempor erat elitr rebum at clita.Diam dolor diam ipsum sit diam
-        diam amet diam et eos.clita erat ipsum et lorem et sit.
-      </div>
-      <div class="client">
-        <img src="./img26.jpg">
-        <div class="client-info">
-          <div class="name">Client Name</div>
-          <div class="role">profession </div>
+
+      <div class="card2">
+        <div class="t2">
+          Tempor erat elitr rebum at clita.Diam dolor diam ipsum sit diam
+          diam amet diam et eos.clita erat ipsum et lorem et sit.
+        </div>
+        <div class="client">
+          <img src="./img26.jpg">
+          <div class="client-info">
+            <div class="name">Client Name</div>
+            <div class="role">Profession</div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="card3">
-      <div class="t3">
-        Tempor erat elitr rebum at clita.Diam dolor diam ipsum sit diam
-        diam amet diam et eos.clita erat ipsum et lorem et sit.
-      </div>
-      <div class="client">
-        <img src="./img27.jpg">
-        <div class="client-info">
-          <div class="name">Client Name</div>
-          <div class="role">profession </div>
+
+      <div class="card3">
+        <div class="t3">
+          Tempor erat elitr rebum at clita.Diam dolor diam ipsum sit diam
+          diam amet diam et eos.clita erat ipsum et lorem et sit.
+        </div>
+        <div class="client">
+          <img src="./img27.jpg">
+          <div class="client-info">
+            <div class="name">Client Name</div>
+            <div class="role">Profession</div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="card4">
-      <div class="t4">
-        Tempor erat elitr rebum at clita.Diam dolor diam ipsum sit diam
-        diam amet diam et eos.clita erat ipsum et lorem et sit.
+
+      <div class="card4">
+        <div class="t4">
+          Tempor erat elitr rebum at clita.Diam dolor diam ipsum sit diam
+          diam amet diam et eos.clita erat ipsum et lorem et sit.
+        </div>
+        <div class="client">
+          <img src="./img28.jpg">
+          <div class="client-info">
+            <div class="name">Client Name</div>
+            <div class="role">Profession</div>
+          </div>
+        </div>
       </div>
-      <div class="client">
-        <img src="./img28.jpg">
-        <div class="client-info">
-          <div class="name">Client Name</div>
-          <div class="role">profession
+
+      <!-- Duplicate cards for smooth infinite scroll -->
+      <div class="card3">
+        <div class="t3">
+          Tempor erat elitr rebum at clita.Diam dolor diam ipsum sit diam
+          diam amet diam et eos.clita erat ipsum et lorem et sit.
+        </div>
+        <div class="client">
+          <img src="./img27.jpg">
+          <div class="client-info">
+            <div class="name">Client Name</div>
+            <div class="role">Profession</div>
+          </div>
+        </div>
+      </div>
+      <div class="card1">
+        <div class="t1">
+          Tempor erat elitr rebum at clita.Diam dolor diam ipsum sit diam
+          diam amet diam et eos.clita erat ipsum et lorem et sit.
+        </div>
+        <div class="client">
+          <img src="./img25.jpg">
+          <div class="client-info">
+            <div class="name">Client Name</div>
+            <div class="role">Profession</div>
+          </div>
+        </div>
+      </div>
+      <div class="card3">
+        <div class="t3">
+          Tempor erat elitr rebum at clita.Diam dolor diam ipsum sit diam
+          diam amet diam et eos.clita erat ipsum et lorem et sit.
+        </div>
+        <div class="client">
+          <img src="./img27.jpg">
+          <div class="client-info">
+            <div class="name">Client Name</div>
+            <div class="role">Profession</div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div>
-  </div>
+
+
+
+
+
+
   <div class="hair">
     <div class="one">
-    <div class="template1">
-      <ion-icon name="calendar"></ion-icon>Jan 01,2025|<ion-icon name="folder"></ion-icon>Hair Salone
-      <h1>How to Extend The Life of Your Haircolor</h1>
-      <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget libero lobortis,
-        auctor nisi quis, aliquet nunc. Nam dapibus interdum lacus.</h5>
-      <button class="btn">READ MORE →</button>
-    </div>
-    <div class="hair1">
-      <img src="./img29.jpg" width="100%">
-    </div>
+      <div class="template1">
+        <ion-icon name="calendar"></ion-icon>Jan 01,2025|<ion-icon name="folder"></ion-icon>Hair Salone
+        <h1>How to Extend The Life of Your Haircolor</h1>
+        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget libero lobortis,
+          auctor nisi quis, aliquet nunc. Nam dapibus interdum lacus.</h5>
+        <button class="btn">READ MORE →</button>
+      </div>
+      <div class="hair1">
+        <img src="./img29.jpg" width="100%">
+      </div>
     </div>
     <div class="two">
-    <div class="template2">
-      <ion-icon name="calendar"></ion-icon>Jan 01,2025|<ion-icon name="folder"></ion-icon>Hair Salone
-      <h1>Hottest Hairstyles and Haircuts in 2045</h1>
-      <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget libero lobortis,
-        auctor nisi quis, aliquet nunc. Nam dapibus interdum lacus.</h5>
-      <button class="btn">READ MORE →</button>
-    </div>
-    <div class="hair2">
-      <img src="./img30.jpg" width="100%">
-    </div>
+      <div class="template2">
+        <ion-icon name="calendar"></ion-icon>Jan 01,2025|<ion-icon name="folder"></ion-icon>Hair Salone
+        <h1>Hottest Hairstyles and Haircuts in 2045</h1>
+        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget libero lobortis,
+          auctor nisi quis, aliquet nunc. Nam dapibus interdum lacus.</h5>
+        <button class="btn">READ MORE →</button>
+      </div>
+      <div class="hair2">
+        <img src="./img30.jpg" width="100%">
+      </div>
     </div>
   </div>
 
-<div class="loc" id="CONTACT">
- <div class="loc1">
-  <h2><ion-icon name="cut" class="cut"></ion-icon>Salone</h2>
-  <p>Aliquyam sed elitr elitr erat sed diam ipsum eirmod eos lorem
-    nonumy. Tempor sea ipsum diam sed clita dolore eos dolores
-    magna erat dolore sed stet justo et dolor.</p>
-  <p><ion-icon name="location"></ion-icon>  123 Street, New York, USA </p>  
-  <p><ion-icon name="call"></ion-icon> +91 8639575901</p>
-  <p><ion-icon name="mail"></ion-icon>sujanayata@gmail.com</p>
-  <div class="si">
-    <ion-icon name="logo-twitter"></ion-icon>
-    <ion-icon name="logo-facebook"></ion-icon>
-    <ion-icon name="logo-linkedin"></ion-icon>
-    <ion-icon name="logo-instagram"></ion-icon>
-    <ion-icon name="logo-youtube"></ion-icon>
-  </div>
- </div>
 
-<div class="loc2">
-  <div class="links">
-    <div class="quick">
-      <h2>Quick Links</h2>
-      <p>> About US</p>
-      <p>> Contact US</p>
-      <p>> Our Services</p>
-      <p>> Terms & Condition</p>
+
+
+  <div class="loc" id="CONTACT">
+    <!-- Left Section -->
+    <div class="loc1">
+      <h2><ion-icon name="cut" class="cut"></ion-icon>Salone</h2>
+      <p>Aliquyam sed elitr elitr erat sed diam ipsum eirmod eos lorem nonumy. Tempor sea ipsum diam sed clita dolore
+        eos dolores magna erat dolore sed stet justo et dolor.</p>
+      <p><ion-icon name="location"></ion-icon> 123 Street, New York, USA </p>
+      <p><ion-icon name="call"></ion-icon> +91 8639575901</p>
+      <p><ion-icon name="mail"></ion-icon> sujanayata@gmail.com</p>
+      <div class="si">
+        <ion-icon name="logo-twitter"></ion-icon>
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="logo-linkedin"></ion-icon>
+        <ion-icon name="logo-instagram"></ion-icon>
+        <ion-icon name="logo-youtube"></ion-icon>
+      </div>
     </div>
-    <div class="popular">
-      <h2>Popular Links</h2>
-      <p>> About US</p>
-      <p>> Contact US</p>
-      <p>> Our Services</p>
-      <p>> Terms & Condition</p>
-    </div> 
+
+    <!-- Right Section -->
+    <div class="loc2">
+      <div class="links">
+        <div class="quick">
+          <h2>Quick Links</h2>
+          <p>> About US</p>
+          <p>> Contact US</p>
+          <p>> Our Services</p>
+          <p>> Terms & Conditions</p>
+        </div>
+        <div class="popular">
+          <h2>Popular Links</h2>
+          <p>> About US</p>
+          <p>> Contact US</p>
+          <p>> Our Services</p>
+          <p>> Terms & Conditions</p>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="map">
+        <h2>Our Location</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3133.3097450479377!2d83.55971575310727!3d18.500895104375637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3b8870e99ea9dd%3A0xa1a424e6ddc64f69!2sNemalam%2C%20Andhra%20Pradesh%20535126!5e1!3m2!1sen!2sin!4v1758647979282!5m2!1sen!2sin"
+          width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+
+      <div class="news">
+        <h2>Newsletter</h2>
+        <input type="email" placeholder="Enter Your Email" autocomplete="off">
+        <button><ion-icon name="send"></ion-icon></button>
+        <p>Diam sed sed dolor stet amet eirmod</p>
+      </div>
     </div>
-  <div class="news">
-    <h2> News Letter</h2>
-    <input type="email" placeholder="Enter Your Email" autocomplete="off">
-    <button><ion-icon name="send"></ion-icon></button>
-    <p>Diam sed sed dolor stet amet eirmod</p>   
   </div>
-</div> 
-</div>   
-<footer>
-<div class="footer">
- <div class="f1">
-<p>&#169 <a href=#YourSiteName>#YourSiteName</a>All Right Reserved.</p>
-</div>
-<div class="f2">
-  <p>Designed BY <a href="HTMLCODEX">#HTML Cocex.</a>Distributed By<a href="sujanayata">#sujanayata</a></p>  
-</div>
-</div>
-</footer>
 
-
-
-
+  <!-- Footer -->
+  <footer>
+    <div class="footer">
+      <div class="f1">
+        <p>&#169; <a href="#"></a> All Rights Reserved.</p>
+      </div>
+      <div class="f2">
+        <p>Designed BY <a href="#">HTML Codex</a> | Distributed By <a href="#">Sujanayata</a></p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
